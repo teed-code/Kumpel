@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kumpel AB</title>
+    <link rel="stylesheet" href="Kumpel.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sqd1gqf.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Start</a></li>
+                <li><a href="about.html">Om Carina</a></li>
+                <li><a href="books.html">Böcker</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h2>Kontakt</h2>
+            <form class="contact-form" action="submit_form.php" method="post">
+                <div class="section">
+                    <label for="text-amount">Textens omfång</label>
+                    <div class="text-amount">
+                        <select name="text-amount" id="text-amount">
+                            <option value="0">0</option>
+                            <option value="10-100">10-100</option>
+                            <option value="100-1000">100-1000</option>
+                            <option value="1000-3000">1000-3000</option>
+                            <option value="3000+">3000+</option>
+                        </select>
+                        <select name="unit" id="unit">
+                            <option value="tecken">Tecken</option>
+                            <option value="ord">Ord</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label>Uppdragets deadline</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="deadline" value="under1"> Mindre än 1 vecka</label>
+                        <label><input type="checkbox" name="deadline" value="1-4weeks"> 1-4 veckor</label>
+                        <label><input type="checkbox" name="deadline" value="1-3months"> 1-3 månader</label>
+                        <label><input type="checkbox" name="deadline" value="over3months"> Mer än 3 månader</label>
+                    </div>
+                </div>
+
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" placeholder="Din e-post" required>
+
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." required></textarea>
+
+                <button type="submit">Skicka</button>
+            </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 by Kumpel. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
